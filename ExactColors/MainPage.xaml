@@ -10,14 +10,14 @@
 
     <StackPanel x:Name="MainPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
         <canvas:CanvasControl x:Name="CanvasControl" Draw="CanvasControl_Draw" Width="1" Height="1" CreateResources="CanvasControl_CreateResources"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,20,20,20">
             <TextBlock Text="x: "/>
             <TextBox x:Name="TextBox_x" Text="0.64"/>
             <TextBlock Text="y: "/>
             <TextBox x:Name="TextBox_y" Text="0.33"/>
             <TextBlock Text="Y: "/>
             <TextBox x:Name="TextBox_Y" Text="0.212673"/>
-            <Button x:Name="Button_Apply" Content="Apply" Click="Button_Apply_Click"/>
+            <Button x:Name="Button_Apply" Content="Apply" Click="Button_Apply_Click" Margin="10,0,0,0"/>
         </StackPanel>
     </StackPanel>
 </Page>

@@ -79,7 +79,7 @@ namespace winrt::ExactColors::implementation
         m_panel.SwapChain(m_swapchain);
 
         {
-5            auto ds = m_swapchain.CreateDrawingSession(winrt::Windows::UI::Colors::AliceBlue());
+            auto ds = m_swapchain.CreateDrawingSession(winrt::Windows::UI::Colors::AliceBlue());
             ds.FillRectangle(0, 0, 500, 500, m_brush);
         }
         m_swapchain.Present();
