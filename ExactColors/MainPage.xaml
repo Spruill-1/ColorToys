@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="ExactColors.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExactColors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d">
+
+    <StackPanel x:Name="MainPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <canvas:CanvasControl x:Name="CanvasControl" Draw="CanvasControl_Draw" Width="1" Height="1" CreateResources="CanvasControl_CreateResources"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="x: "/>
+            <TextBox x:Name="TextBox_x" Text="0.64"/>
+            <TextBlock Text="y: "/>
+            <TextBox x:Name="TextBox_y" Text="0.33"/>
+            <TextBlock Text="Y: "/>
+            <TextBox x:Name="TextBox_Y" Text="0.212673"/>
+            <Button x:Name="Button_Apply" Content="Apply" Click="Button_Apply_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
