@@ -12,11 +12,11 @@
         <canvas:CanvasControl x:Name="CanvasControl" Draw="CanvasControl_Draw" Width="1" Height="1" CreateResources="CanvasControl_CreateResources"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,20,20,20">
             <TextBlock Text="x: "/>
-            <TextBox x:Name="TextBox_x" Text="0.64"/>
+            <TextBox x:Name="TextBox_x" Text="0.0"/>
             <TextBlock Text="y: "/>
-            <TextBox x:Name="TextBox_y" Text="0.33"/>
+            <TextBox x:Name="TextBox_y" Text="0.0"/>
             <TextBlock Text="Y: "/>
-            <TextBox x:Name="TextBox_Y" Text="0.212673"/>
+            <TextBox x:Name="TextBox_Y" Text="0.0"/>
             <Button x:Name="Button_Apply" Content="Apply" Click="Button_Apply_Click" Margin="10,0,0,0"/>
         </StackPanel>
     </StackPanel>

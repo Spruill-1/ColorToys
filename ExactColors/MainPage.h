@@ -20,8 +20,6 @@ namespace winrt::ExactColors::implementation
         CanvasSwapChain m_swapchain;
         Brushes::CanvasSolidColorBrush m_brush;
         UI::Xaml::CanvasSwapChainPanel m_panel;
-
-        float m_x = 0.312727f, m_y = 0.329023f;
     };
 }
 

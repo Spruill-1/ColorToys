@@ -70,7 +70,8 @@ namespace winrt::ExactColors::implementation
         XYZ[2] = (1.0 - x - y) * Y / y; // Z
 
         ComputeRGBFromXYZ(XYZ, scRGB);
-        m_brush = CanvasSolidColorBrush::CreateHdr(m_device.GetSharedDevice(), {static_cast<float>(scRGB[0]), static_cast<float>(scRGB[1]), static_cast<float>(scRGB[2]), 1.0f});
+
+        m_brush = CanvasSolidColorBrush::CreateHdr(m_device.GetSharedDevice(), { static_cast<float>(scRGB[0]), static_cast<float>(scRGB[1]), static_cast<float>(scRGB[2]), 1.0f });
         m_brush.ColorHdr({ static_cast<float>(scRGB[0]), static_cast<float>(scRGB[1]), static_cast<float>(scRGB[2]), 1.0f });
     }
 
